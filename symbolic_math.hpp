@@ -157,12 +157,4 @@ struct Expression
 template <typename E>
 Expression(const E &) -> Expression<E>;
 
-template <typename>
-using symbol = Symbol<>;
-
-using constant = Constant;
-
-template <typename T>
-using expression = Expression<T>;
-
 }
